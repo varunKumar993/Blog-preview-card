@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4d56b; /* Yellow background color */
+  font-family: Arial, sans-serif;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.975);
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 15px; /* Added padding */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  border: 2px solid black; /* Added black border */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.tag {
+  background-color: #ffd700;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.published-date {
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: black;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.author p {
+  font-size: 14px;
+  color: #333;
+}
